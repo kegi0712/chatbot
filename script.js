@@ -79,7 +79,13 @@ function appendMessage(sender, text, type) {
 
   
 }
-
+window.onload = () => {
+  // ✅ 顯示說明訊息（開場提示）
+  appendMessage("社團運作小幫手", 
+    "👋 歡迎！請輸入關鍵字，例如：<br>「場地」、「器材」、「活動申請」、「時程」等", 
+    "bot"
+  );
+  }
 // Enter直接輸入
 window.addEventListener("DOMContentLoaded", function () {
   const input = document.getElementById("user-input");
