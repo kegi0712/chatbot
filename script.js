@@ -19,7 +19,7 @@ function sendMessage() {
   const message = input.value.trim();
   if (!message) return;
 
-  appendMessage("你", message, "user");
+  appendMessage("優秀社團人", message, "user");
 
   const reply = getReply(message);
   appendMessage("社團運作小幫手", reply, "bot");
@@ -48,7 +48,7 @@ function getReply(message) {
     }
   }
   if (replies.size > 0) {
-    return Array.from(replies).join("\n\n---\n\n");
+    return Array.from(replies).join("\n\n－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－\n\n");
   }
 
   return "抱歉，我找不到這個問題的答案。請輸入：場地、器材、活動申請等關鍵字";
@@ -82,7 +82,7 @@ function appendMessage(sender, text, type) {
 window.onload = () => {
   // ✅ 顯示說明訊息（開場提示）
   appendMessage("社團運作小幫手", 
-    "👋 歡迎！請輸入關鍵字，例如：<br>「場地」、「器材」、「活動申請」、「時程」等", 
+    "👋 歡迎您！使用社團運作小幫手，請輸入關鍵字，例如：「場地」、「器材」、「活動申請」、「時程」等，或是告訴我你想要做什麼？", 
     "bot"
   );
   }
