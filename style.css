@@ -74,11 +74,15 @@ button {
 }
 
 .user {
+ background-color: #d0f0c0;
+  margin-left: auto;
   text-align: right;
-  color: #333;
+  border-bottom-right-radius: 0;
 }
 
 .bot {
+   background-color: #e6e6e6;
+  margin-right: auto;
   text-align: left;
-  color: #b31b1b;
+  border-bottom-left-radius: 0;
 }

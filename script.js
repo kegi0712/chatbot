@@ -71,7 +71,7 @@ function appendMessage(sender, text, type) {
   msgDiv.innerHTML = `
     <div style="display: flex; justify-content: space-between; align-items: flex-end;">
       <div><strong>${sender}：</strong> ${parsedText}</div>
-      <div style="font-size: 0.75em; color: gray; margin-left: 10px;">${time}</div>
+      <div style="font-size: 0.75em; color: red; position: absolute; bottom: 4px; right: 10px;">${time}</div>
     </div>`;
 
   chatBox.appendChild(msgDiv);
